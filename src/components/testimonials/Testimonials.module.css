@@ -1,0 +1,206 @@
+.container {
+  position: relative;
+  padding: 80px 120px;
+  background: #9c69e2;
+  border-radius: 50px;
+  overflow: visible;
+  color: white;
+  width: 100%;
+  margin: 250px auto;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.card {
+  flex: 0 0 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 40px 50px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #f0f0f0;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #9c69e2;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.navButton:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.name {
+  font-family: "Avenir", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  color: #212353;
+  margin-bottom: 5px;
+}
+
+.website {
+  font-family: "Avenir", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  color: #9c69e2;
+  margin-bottom: 20px;
+}
+
+.cmt {
+  font-family: "Avenir", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #4b5d68;
+  max-width: 450px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 80px; 
+    border-radius: 30px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 25px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+  }
+
+  .prev {
+    left: -60px;
+  }
+
+  .next {
+    right: -60px;
+  }
+
+  .navButton {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 60px; /* Vẫn đủ không gian cho buttons */
+  }
+
+  .prev {
+    left: -45px;
+  }
+
+  .next {
+    right: -45px;
+  }
+
+  .navButton {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .cmt {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,124 @@
+.wrapper {
+  margin: 90px;
+  width: 100%;
+}
+
+.btnAdd {
+  background-color: #9c69e2;
+  color: white;
+  border-radius: 50px;
+  height: 53px;
+  min-width: 250px;
+}
+
+.input {
+  width: 368px;
+  height: 49px;
+  border-radius: 6px;
+  padding-left: 30px;
+  font-size: 15px;
+  border: 1px solid;
+}
+
+.selectWrapper {
+  position: relative;
+  width: 368px;
+}
+
+.select {
+  width: 100%;
+  height: 49px;
+  border-radius: 6px;
+  padding: 0 40px 0 30px;
+  font-size: 15px;
+  border: 1px solid;
+  appearance: none;
+  background-color: white;
+}
+
+.chevron {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #333;
+}
+
+.formFilter {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 20px;
+  }
+
+  .btnAdd {
+    width: 100%;
+    min-width: unset;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .input,
+  .select {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .selectWrapper {
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+
+  tbody td {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .formFilter {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+}
