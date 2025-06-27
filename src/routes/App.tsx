@@ -49,7 +49,7 @@ const AppRoutes = () => {
 export default function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/fe-test">
         <AppRoutes />
       </BrowserRouter>
     </Provider>
