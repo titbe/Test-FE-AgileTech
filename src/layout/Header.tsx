@@ -1,6 +1,8 @@
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
+import logo from "../../public/logo.svg";
+
 // import { useAuth } from "../hooks/useAuth";
 
 const Header = () => {
@@ -11,7 +13,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <Link to="/">
-        <img src="/src/assets/logo.svg" alt="Test FE logo" />
+        <img src={logo} alt="logo" />
       </Link>
 
       {accessToken ? (
