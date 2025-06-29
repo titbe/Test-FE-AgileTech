@@ -77,4 +77,22 @@ button:focus-visible {
   }
 }
 
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+  a {
+    color: white !important;
+  }
+  h1,
+  h2,
+  p,
+  ul,
+  li {
+    color: white !important;
+  }
+  li:hover {
+    color: white !important;
+  }
+}

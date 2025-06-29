@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import logo from "../../public/logo.svg";
+import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import message from "../assets/message.svg";
 

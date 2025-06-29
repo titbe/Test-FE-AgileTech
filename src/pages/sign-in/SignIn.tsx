@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
-import logo from "../../../public/logo.svg";
+import logo from "../../assets/logo.svg";
 import styles from "./SignIn.module.css";
 import { setCredentials } from "../../store/authSlice";
 import { useLoginMutation } from "../../api/authApi";
