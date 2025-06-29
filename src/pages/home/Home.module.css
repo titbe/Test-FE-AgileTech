@@ -174,6 +174,7 @@ h1 {
 }
 
 .testimonialsSection {
+  width: 100%;
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -311,7 +312,7 @@ h1 {
     transform: translateY(20px);
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
-  
+
   .slideInDown {
     transform: translateY(-15px);
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -321,7 +322,7 @@ h1 {
     transform: translateY(15px);
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
-  
+
   .staggeredCards .cardWrapper {
     transform: translateY(15px) scale(0.98);
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
